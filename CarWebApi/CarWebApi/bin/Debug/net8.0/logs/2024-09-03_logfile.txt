@@ -1,0 +1,560 @@
+2024-09-03 10:11:52.5882 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T07:11:52.5764032Z"}
+2024-09-03 10:12:02.2602 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"19","CreateAt":"2024-09-03T07:12:02.260097Z"}
+2024-09-03 10:12:16.2052 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"UpdetaCar","Id":"19","CreateAt":"2024-09-03T07:12:16.2051865Z"}
+2024-09-03 10:28:30.7295 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"DeleteACar","Id":"134","CreateAt":"2024-09-03T07:28:30.7150451Z"}
+2024-09-03 10:28:34.5717 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T07:28:34.5716328Z"}
+2024-09-03 10:29:43.4158 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"19","CreateAt":"2024-09-03T07:29:43.4029404Z"}
+2024-09-03 10:29:48.4138 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"3","CreateAt":"2024-09-03T07:29:48.4137548Z"}
+2024-09-03 10:31:29.3692 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T07:31:29.3558119Z"}
+2024-09-03 10:31:34.7219 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCarsByPageAndLimit","Id":null,"CreateAt":"2024-09-03T07:31:34.7218724Z"}
+2024-09-03 10:31:38.0629 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCarsByPageAndLimit","Id":null,"CreateAt":"2024-09-03T07:31:38.0628174Z"}
+2024-09-03 10:32:02.0156 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetAllCarsOrderById","Id":null,"CreateAt":"2024-09-03T07:32:02.0155077Z"}
+2024-09-03 10:32:07.1152 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCarsByBrand","Id":null,"CreateAt":"2024-09-03T07:32:07.1150893Z"}
+2024-09-03 10:32:38.4357 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"AddACar","Id":null,"CreateAt":"2024-09-03T07:32:38.4356545Z"}
+2024-09-03 10:32:52.4261 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"135","CreateAt":"2024-09-03T07:32:52.4260219Z"}
+2024-09-03 10:33:13.1191 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"UpdetaCar","Id":"19","CreateAt":"2024-09-03T07:33:13.119111Z"}
+2024-09-03 10:33:21.9216 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"19","CreateAt":"2024-09-03T07:33:21.9216257Z"}
+2024-09-03 10:33:36.4702 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"UpdateOneThingOnCar","Id":"19","CreateAt":"2024-09-03T07:33:36.4702034Z"}
+2024-09-03 10:33:38.2215 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"19","CreateAt":"2024-09-03T07:33:38.2214416Z"}
+2024-09-03 10:33:50.1090 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"DeleteACar","Id":"67","CreateAt":"2024-09-03T07:33:50.1089667Z"}
+2024-09-03 10:33:56.3462 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"67","CreateAt":"2024-09-03T07:33:56.3461791Z"}
+2024-09-03 10:33:56.5015 ERROR Something went wrong: Entities.Exceptions.CarNotFoundException: There is no car with id: 67
+   at Services.CarManager.GetOneBookByIdAndCheckExits(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 108
+   at Services.CarManager.GetACarByIdAsync(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 45
+   at Presentation.Controllers.CarsController.GetACarByIdAsync(Int32 id) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 59
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 10:33:59.5351 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T07:33:59.5350998Z"}
+2024-09-03 10:34:15.3767 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"DeleteACar","Id":"133","CreateAt":"2024-09-03T07:34:15.3766551Z"}
+2024-09-03 10:34:17.4905 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"DeleteACar","Id":"133","CreateAt":"2024-09-03T07:34:17.4904897Z"}
+2024-09-03 10:34:17.4950 ERROR Something went wrong: Entities.Exceptions.CarNotFoundException: There is no car with id: 133
+   at Services.CarManager.GetOneBookByIdAndCheckExits(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 108
+   at Services.CarManager.DeleteACarAsync(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 38
+   at Presentation.Controllers.CarsController.DeleteACarAsync(Int32 id) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 82
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 10:34:21.8311 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"133","CreateAt":"2024-09-03T07:34:21.8310459Z"}
+2024-09-03 10:34:21.8311 ERROR Something went wrong: Entities.Exceptions.CarNotFoundException: There is no car with id: 133
+   at Services.CarManager.GetOneBookByIdAndCheckExits(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 108
+   at Services.CarManager.GetACarByIdAsync(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 45
+   at Presentation.Controllers.CarsController.GetACarByIdAsync(Int32 id) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 59
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 10:34:24.3949 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T07:34:24.3948151Z"}
+2024-09-03 11:15:08.0061 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:15:07.9905078Z"}
+2024-09-03 11:15:18.4447 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:15:18.4446065Z"}
+2024-09-03 11:15:30.9018 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:15:30.9017698Z"}
+2024-09-03 11:15:33.2181 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:15:33.2180709Z"}
+2024-09-03 11:15:41.9001 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:15:41.9000626Z"}
+2024-09-03 11:15:47.5975 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:15:47.5975021Z"}
+2024-09-03 11:15:57.0578 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:15:57.0577631Z"}
+2024-09-03 11:16:04.4265 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:16:04.4264122Z"}
+2024-09-03 11:16:08.0649 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:16:08.0648557Z"}
+2024-09-03 11:16:09.5950 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:16:09.5950177Z"}
+2024-09-03 11:16:11.6440 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:16:11.6439917Z"}
+2024-09-03 11:16:15.3527 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:16:15.3527038Z"}
+2024-09-03 11:16:18.4810 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:16:18.480955Z"}
+2024-09-03 11:16:24.0625 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:16:24.0624855Z"}
+2024-09-03 11:16:26.5930 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:16:26.5929617Z"}
+2024-09-03 11:17:20.9534 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T08:17:20.9533435Z"}
+2024-09-03 13:06:42.3544 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T10:06:42.3406124Z"}
+2024-09-03 13:36:21.7519 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T10:36:21.7519278Z"}
+2024-09-03 13:42:41.3221 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T10:42:41.3083832Z"}
+2024-09-03 13:42:43.7043 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T10:42:43.7042682Z"}
+2024-09-03 14:01:40.6241 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T11:01:40.6103015Z"}
+2024-09-03 14:11:18.1511 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T11:11:18.1375305Z"}
+2024-09-03 14:11:32.2227 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T11:11:32.2226369Z"}
+2024-09-03 14:11:37.0855 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T11:11:37.0854612Z"}
+2024-09-03 14:11:46.9166 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"133","CreateAt":"2024-09-03T11:11:46.9165016Z"}
+2024-09-03 14:11:46.9739 ERROR Something went wrong: Entities.Exceptions.CarNotFoundException: There is no car with id: 133
+   at Services.CarManager.GetOneBookByIdAndCheckExits(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 111
+   at Services.CarManager.GetACarByIdAsync(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 46
+   at Presentation.Controllers.CarsController.GetACarByIdAsync(Int32 id) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 14:11:52.4600 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"14","CreateAt":"2024-09-03T11:11:52.4599388Z"}
+2024-09-03 14:11:52.4669 ERROR Something went wrong: Entities.Exceptions.CarNotFoundException: There is no car with id: 14
+   at Services.CarManager.GetOneBookByIdAndCheckExits(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 111
+   at Services.CarManager.GetACarByIdAsync(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 46
+   at Presentation.Controllers.CarsController.GetACarByIdAsync(Int32 id) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 14:11:55.9217 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"14","CreateAt":"2024-09-03T11:11:55.9216908Z"}
+2024-09-03 14:11:55.9217 ERROR Something went wrong: Entities.Exceptions.CarNotFoundException: There is no car with id: 14
+   at Services.CarManager.GetOneBookByIdAndCheckExits(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 111
+   at Services.CarManager.GetACarByIdAsync(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 46
+   at Presentation.Controllers.CarsController.GetACarByIdAsync(Int32 id) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 14:12:03.8429 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCarsByBrand","Id":null,"CreateAt":"2024-09-03T11:12:03.8428501Z"}
+2024-09-03 14:12:20.7927 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"344","CreateAt":"2024-09-03T11:12:20.7926783Z"}
+2024-09-03 14:12:20.7927 ERROR Something went wrong: Entities.Exceptions.CarNotFoundException: There is no car with id: 344
+   at Services.CarManager.GetOneBookByIdAndCheckExits(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 111
+   at Services.CarManager.GetACarByIdAsync(Int32 id, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 46
+   at Presentation.Controllers.CarsController.GetACarByIdAsync(Int32 id) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 14:12:27.1279 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetACarById","Id":"257","CreateAt":"2024-09-03T11:12:27.1278823Z"}
+2024-09-03 14:12:37.6244 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCarsByBrand","Id":null,"CreateAt":"2024-09-03T11:12:37.6244481Z"}
+2024-09-03 14:12:44.4802 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetAllCarsOrderById","Id":null,"CreateAt":"2024-09-03T11:12:44.4801396Z"}
+2024-09-03 14:13:03.7925 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCarsByPageAndLimit","Id":null,"CreateAt":"2024-09-03T11:13:03.7925278Z"}
+2024-09-03 14:49:11.7346 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T11:49:11.718307Z"}
+2024-09-03 15:09:30.8405 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:09:30.8230669Z"}
+2024-09-03 15:09:30.9045 ERROR Something went wrong: Entities.Exceptions.YearsOutofRangeBadRequestException: Maximum years should be less then 2025 and greater than 1950
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 53
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:10:13.4817 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:10:13.4816493Z"}
+2024-09-03 15:10:13.4817 ERROR Something went wrong: Entities.Exceptions.YearsOutofRangeBadRequestException: Maximum years should be less then 2025 and greater than 1950
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 53
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:10:32.5810 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:10:32.5809724Z"}
+2024-09-03 15:10:32.5810 ERROR Something went wrong: Entities.Exceptions.YearsOutofRangeBadRequestException: Maximum years should be less then 2025 and greater than 1950
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 53
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:11:14.2275 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:11:14.2112636Z"}
+2024-09-03 15:11:14.2606 ERROR Something went wrong: Entities.Exceptions.YearsOutofRangeBadRequestException: Maximum years should be less then 2025 and greater than 1950
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 53
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:11:37.6529 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:11:37.6528245Z"}
+2024-09-03 15:11:37.6529 ERROR Something went wrong: Entities.Exceptions.YearsOutofRangeBadRequestException: Maximum years should be less then 2025 and greater than 1950
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 53
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:12:28.0726 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:12:28.0725326Z"}
+2024-09-03 15:12:28.0726 ERROR Something went wrong: Entities.Exceptions.YearsOutofRangeBadRequestException: Maximum years should be less then 2025 and greater than 1950
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 53
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:13:57.4025 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:13:57.3919742Z"}
+2024-09-03 15:14:04.0226 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:14:04.0225549Z"}
+2024-09-03 15:14:10.0472 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:14:10.0471713Z"}
+2024-09-03 15:14:18.5724 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:14:18.5724031Z"}
+2024-09-03 15:14:21.9803 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:14:21.9803317Z"}
+2024-09-03 15:14:26.5638 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:14:26.5637631Z"}
+2024-09-03 15:14:46.3480 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:14:46.3479866Z"}
+2024-09-03 15:14:51.2296 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:14:51.2296446Z"}
+2024-09-03 15:21:13.4205 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:21:13.4040859Z"}
+2024-09-03 15:21:13.4729 ERROR Something went wrong: Entities.Exceptions.PriceOutofRangeBadRequestException: Maximum price should be less then 100.000.000 and greater than 500
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 55
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:21:31.6847 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:21:31.6624667Z"}
+2024-09-03 15:21:31.7293 ERROR Something went wrong: Entities.Exceptions.PriceOutofRangeBadRequestException: Maximum price should be less then 100.000.000 and greater than 500
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 55
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:21:32.7942 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:21:32.7940567Z"}
+2024-09-03 15:21:32.7942 ERROR Something went wrong: Entities.Exceptions.PriceOutofRangeBadRequestException: Maximum price should be less then 100.000.000 and greater than 500
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 55
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:21:33.8662 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:21:33.8661853Z"}
+2024-09-03 15:21:33.8726 ERROR Something went wrong: Entities.Exceptions.PriceOutofRangeBadRequestException: Maximum price should be less then 100.000.000 and greater than 500
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 55
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:22:15.0087 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:22:14.9982401Z"}
+2024-09-03 15:22:44.3763 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:22:44.3761464Z"}
+2024-09-03 15:22:44.4245 ERROR Something went wrong: Entities.Exceptions.PriceOutofRangeBadRequestException: Maximum price should be less then 100.000.000 and greater than 500
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 55
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:23:53.1469 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:23:53.1383256Z"}
+2024-09-03 15:32:12.5674 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:32:12.5535937Z"}
+2024-09-03 15:32:18.8321 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:32:18.8320437Z"}
+2024-09-03 15:32:26.9435 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:32:26.9435723Z"}
+2024-09-03 15:32:37.1054 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:32:37.105365Z"}
+2024-09-03 15:32:43.9680 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:32:43.9679979Z"}
+2024-09-03 15:32:50.8427 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:32:50.8427503Z"}
+2024-09-03 15:33:27.7164 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:33:27.7163139Z"}
+2024-09-03 15:33:37.2126 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:33:37.2126231Z"}
+2024-09-03 15:33:42.9018 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:33:42.9017413Z"}
+2024-09-03 15:33:54.4988 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:33:54.4987863Z"}
+2024-09-03 15:34:16.8685 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:34:16.8685321Z"}
+2024-09-03 15:43:14.4518 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:43:14.4341068Z"}
+2024-09-03 15:43:14.5117 ERROR Something went wrong: System.InvalidOperationException: The LINQ expression 'DbSet<Car>()
+    .Where(c => (long)c.Years >= __p_0 && (long)c.Years <= __p_1 && c.Price >= __p_2 && c.Price <= __p_3 && False || c.Brand.Equals(
+        value: __carParameters_Brand_4, 
+        comparisonType: OrdinalIgnoreCase))' could not be translated. Additional information: Translation of the 'string.Equals' overload with a 'StringComparison' parameter is not supported. See https://go.microsoft.com/fwlink/?linkid=2129535 for more information. Either rewrite the query in a form that can be translated, or switch to client evaluation explicitly by inserting a call to 'AsEnumerable', 'AsAsyncEnumerable', 'ToList', or 'ToListAsync'. See https://go.microsoft.com/fwlink/?linkid=2101038 for more information.
+   at Microsoft.EntityFrameworkCore.Query.QueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.RelationalQueryableMethodTranslatingExpressionVisitor.Translate(Expression expression)
+   at Microsoft.EntityFrameworkCore.Query.QueryCompilationContext.CreateQueryExecutor[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Storage.Database.CompileQuery[TResult](Expression query, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.CompileQueryCore[TResult](IDatabase database, Expression query, IModel model, Boolean async)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass12_0`1.<ExecuteAsync>b__0()
+   at Microsoft.EntityFrameworkCore.Query.Internal.CompiledQueryCache.GetOrAddQuery[TResult](Object cacheKey, Func`1 compiler)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.ExecuteAsync[TResult](Expression query, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.ExecuteAsync[TResult](Expression expression, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1.GetAsyncEnumerator(CancellationToken cancellationToken)
+   at System.Runtime.CompilerServices.ConfiguredCancelableAsyncEnumerable`1.GetAsyncEnumerator()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repositories.EFCore.CarRepository.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Repositories\EFCore\CarRepository.cs:line 31
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 56
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-03 15:46:56.3867 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:46:56.3732945Z"}
+2024-09-03 15:51:32.4709 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:51:32.4563349Z"}
+2024-09-03 15:51:36.1413 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:51:36.1412793Z"}
+2024-09-03 15:51:54.0305 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:51:54.0304764Z"}
+2024-09-03 15:52:05.7391 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:52:05.7390874Z"}
+2024-09-03 15:52:15.4813 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:52:15.4812627Z"}
+2024-09-03 15:52:29.8412 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T12:52:29.841252Z"}
+2024-09-03 16:03:40.6848 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:03:40.6725587Z"}
+2024-09-03 16:03:56.3536 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:03:56.3535826Z"}
+2024-09-03 16:05:38.6785 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:05:38.6637132Z"}
+2024-09-03 16:05:47.6727 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:05:47.6726577Z"}
+2024-09-03 16:06:02.2041 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:06:02.2040812Z"}
+2024-09-03 16:06:23.2771 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:06:23.2637064Z"}
+2024-09-03 16:06:47.2672 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:06:47.2567106Z"}
+2024-09-03 16:06:55.5698 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:06:55.5697973Z"}
+2024-09-03 16:06:58.3695 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:06:58.3695116Z"}
+2024-09-03 16:07:02.8216 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:07:02.8216685Z"}
+2024-09-03 16:07:14.0304 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:07:14.0303999Z"}
+2024-09-03 16:07:28.2083 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:07:28.2082973Z"}
+2024-09-03 16:07:38.6934 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:07:38.6933867Z"}
+2024-09-03 16:07:45.7117 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:07:45.7116837Z"}
+2024-09-03 16:07:48.7753 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:07:48.7753069Z"}
+2024-09-03 16:08:01.6043 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:08:01.6043089Z"}
+2024-09-03 16:10:26.3732 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:10:26.3633055Z"}
+2024-09-03 16:10:31.5245 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:10:31.5244827Z"}
+2024-09-03 16:10:35.1718 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T13:10:35.1718689Z"}
+2024-09-03 16:33:33.8233 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetAllCarsOrderById","Id":null,"CreateAt":"2024-09-03T13:33:33.8090897Z"}
+2024-09-03 17:33:02.0575 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T14:33:02.0441745Z"}
+2024-09-03 17:33:14.9990 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T14:33:14.9989218Z"}
+2024-09-03 17:33:15.0680 ERROR Something went wrong: Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repositories.EFCore.CarRepository.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Repositories\EFCore\CarRepository.cs:line 51
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 56
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:706d4b6f-610a-4329-ac36-3e157c300ebf
+Error Number:10742,State:1,Class:15
+2024-09-03 17:33:24.7714 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T14:33:24.7714049Z"}
+2024-09-03 17:33:24.7807 ERROR Something went wrong: Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repositories.EFCore.CarRepository.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Repositories\EFCore\CarRepository.cs:line 51
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 56
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:706d4b6f-610a-4329-ac36-3e157c300ebf
+Error Number:10742,State:1,Class:15
+2024-09-03 17:33:38.1640 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T14:33:38.1639491Z"}
+2024-09-03 17:33:38.1726 ERROR Something went wrong: Microsoft.Data.SqlClient.SqlException (0x80131904): The offset specified in a OFFSET clause may not be negative.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Repositories.EFCore.CarRepository.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Repositories\EFCore\CarRepository.cs:line 51
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 56
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:706d4b6f-610a-4329-ac36-3e157c300ebf
+Error Number:10742,State:1,Class:15
+2024-09-03 17:33:58.7966 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T14:33:58.7966002Z"}
+2024-09-03 17:34:08.9112 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T14:34:08.9112531Z"}
+2024-09-03 17:34:15.6408 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T14:34:15.6407777Z"}
+2024-09-03 17:34:23.7318 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T14:34:23.7318335Z"}
+2024-09-03 17:36:09.5020 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-03T14:36:09.5020504Z"}

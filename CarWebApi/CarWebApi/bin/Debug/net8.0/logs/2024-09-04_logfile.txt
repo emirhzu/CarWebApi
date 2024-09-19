@@ -1,0 +1,48 @@
+2024-09-04 09:08:09.2262 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:08:09.2124992Z"}
+2024-09-04 09:08:13.2841 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:08:13.2840523Z"}
+2024-09-04 09:08:13.3616 ERROR Something went wrong: System.ArgumentException: Value cannot be empty. (Parameter 'ordering')
+   at System.Linq.Dynamic.Core.Validation.Check.NotNullOrWhiteSpace(String value, String parameterName)
+   at System.Linq.Dynamic.Core.Validation.Check.NotEmpty(String value, String parameterName)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.InternalOrderBy(IQueryable source, ParsingConfig config, String ordering, Object comparer, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy(IQueryable source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, ParsingConfig config, String ordering, Object[] args)
+   at System.Linq.Dynamic.Core.DynamicQueryableExtensions.OrderBy[TSource](IQueryable`1 source, String ordering, Object[] args)
+   at Repositories.EFCore.CarRepositoryExtensions.Sort(IQueryable`1 cars, String orderByQueryString) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Repositories\EFCore\CarRepositoryExtensions.cs:line 51
+   at Repositories.EFCore.CarRepository.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Repositories\EFCore\CarRepository.cs:line 42
+   at Services.CarManager.GetCarsAsync(CarParameters carParameters, Boolean trackChanges) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Services\CarManager.cs:line 56
+   at Presentation.Controllers.CarsController.GetCarsAsync(CarParameters carParameters) in C:\Users\sercf\Desktop\Projects\CarWebApi\CarWebApi\Presentation\Controllers\CarsController.cs:line 33
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2024-09-04 09:08:17.8322 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:08:17.8322591Z"}
+2024-09-04 09:08:21.4987 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:08:21.4986879Z"}
+2024-09-04 09:09:01.4935 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:09:01.4934769Z"}
+2024-09-04 09:09:08.8855 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:09:08.8854986Z"}
+2024-09-04 09:09:14.3222 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:09:14.322196Z"}
+2024-09-04 09:09:19.0973 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:09:19.0972409Z"}
+2024-09-04 09:09:24.7775 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:09:24.7774777Z"}
+2024-09-04 09:09:29.7827 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:09:29.7827421Z"}
+2024-09-04 09:09:39.3272 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:09:39.3271366Z"}
+2024-09-04 09:10:00.4855 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:10:00.4855322Z"}
+2024-09-04 09:10:40.9507 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:10:40.9507125Z"}
+2024-09-04 09:10:43.8341 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:10:43.8340788Z"}
+2024-09-04 09:19:30.3512 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:19:30.3405227Z"}
+2024-09-04 09:19:35.4189 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:19:35.4189147Z"}
+2024-09-04 09:19:43.4084 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:19:43.4083694Z"}
+2024-09-04 09:19:47.8366 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:19:47.8365863Z"}
+2024-09-04 09:21:00.6969 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:21:00.6812937Z"}
+2024-09-04 09:21:04.8603 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:21:04.8599281Z"}
+2024-09-04 09:21:07.5867 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:21:07.5867101Z"}
+2024-09-04 09:21:21.5080 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:21:21.5079531Z"}
+2024-09-04 09:21:31.0214 INFO {"ModelName":"OnActionExecuting","Controller":"Cars","Action":"GetCars","Id":null,"CreateAt":"2024-09-04T06:21:31.0213929Z"}

@@ -1,0 +1,202 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA40AB8-100E-486D-BE2B-43FD2F1B32E0}|Entities\\Entities.csproj|c:\\users\\sercf\\desktop\\projects\\carwebapi\\carwebapi\\entities\\datatransferobjects\\userforregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AA40AB8-100E-486D-BE2B-43FD2F1B32E0}|Entities\\Entities.csproj|solutionrelative:entities\\datatransferobjects\\userforregistrationdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CA7A63-3C84-42EE-91D9-C50A8BC0B387}|CarWebApi\\CarWebApi.csproj|c:\\users\\sercf\\desktop\\projects\\carwebapi\\carwebapi\\carwebapi\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CA7A63-3C84-42EE-91D9-C50A8BC0B387}|CarWebApi\\CarWebApi.csproj|solutionrelative:carwebapi\\extensions\\servicesextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{41F9B57E-04D6-4925-8F28-D7F184D96399}|Services\\Services.csproj|c:\\users\\sercf\\desktop\\projects\\carwebapi\\carwebapi\\services\\carmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{41F9B57E-04D6-4925-8F28-D7F184D96399}|Services\\Services.csproj|solutionrelative:services\\carmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DDB00C-47CE-4C1B-8835-DE210D6CBEC9}|Repositories\\Repositories.csproj|c:\\users\\sercf\\desktop\\projects\\carwebapi\\carwebapi\\repositories\\efcore\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DDB00C-47CE-4C1B-8835-DE210D6CBEC9}|Repositories\\Repositories.csproj|solutionrelative:repositories\\efcore\\carrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA40AB8-100E-486D-BE2B-43FD2F1B32E0}|Entities\\Entities.csproj|c:\\users\\sercf\\desktop\\projects\\carwebapi\\carwebapi\\entities\\requestfeatures\\pagedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AA40AB8-100E-486D-BE2B-43FD2F1B32E0}|Entities\\Entities.csproj|solutionrelative:entities\\requestfeatures\\pagedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C09E23-8497-4A2D-9F14-E26B68807A08}|Presentation\\Presentation.csproj|c:\\users\\sercf\\desktop\\projects\\carwebapi\\carwebapi\\presentation\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C09E23-8497-4A2D-9F14-E26B68807A08}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\filescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{70CA7A63-3C84-42EE-91D9-C50A8BC0B387}|CarWebApi\\CarWebApi.csproj|c:\\users\\sercf\\desktop\\projects\\carwebapi\\carwebapi\\carwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{70CA7A63-3C84-42EE-91D9-C50A8BC0B387}|CarWebApi\\CarWebApi.csproj|solutionrelative:carwebapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{60DDB00C-47CE-4C1B-8835-DE210D6CBEC9}|Repositories\\Repositories.csproj|c:\\users\\sercf\\desktop\\projects\\carwebapi\\carwebapi\\repositories\\efcore\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{60DDB00C-47CE-4C1B-8835-DE210D6CBEC9}|Repositories\\Repositories.csproj|solutionrelative:repositories\\efcore\\repositorymanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA40AB8-100E-486D-BE2B-43FD2F1B32E0}|Entities\\Entities.csproj|c:\\users\\sercf\\desktop\\projects\\carwebapi\\carwebapi\\entities\\datatransferobjects\\cardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AA40AB8-100E-486D-BE2B-43FD2F1B32E0}|Entities\\Entities.csproj|solutionrelative:entities\\datatransferobjects\\cardto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A4C09E23-8497-4A2D-9F14-E26B68807A08}|Presentation\\Presentation.csproj|c:\\users\\sercf\\desktop\\projects\\carwebapi\\carwebapi\\presentation\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A4C09E23-8497-4A2D-9F14-E26B68807A08}|Presentation\\Presentation.csproj|solutionrelative:presentation\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0AA40AB8-100E-486D-BE2B-43FD2F1B32E0}|Entities\\Entities.csproj|c:\\users\\sercf\\desktop\\projects\\carwebapi\\carwebapi\\entities\\datatransferobjects\\cardtoforinsertion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0AA40AB8-100E-486D-BE2B-43FD2F1B32E0}|Entities\\Entities.csproj|solutionrelative:entities\\datatransferobjects\\cardtoforinsertion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserForRegistrationDto.cs",
+              "DocumentMoniker": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Entities\\DataTransferObjects\\UserForRegistrationDto.cs",
+              "RelativeDocumentMoniker": "Entities\\DataTransferObjects\\UserForRegistrationDto.cs",
+              "ToolTip": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Entities\\DataTransferObjects\\UserForRegistrationDto.cs*",
+              "RelativeToolTip": "Entities\\DataTransferObjects\\UserForRegistrationDto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T09:00:19.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CarRepository.cs",
+              "DocumentMoniker": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Repositories\\EFCore\\CarRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EFCore\\CarRepository.cs",
+              "ToolTip": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Repositories\\EFCore\\CarRepository.cs",
+              "RelativeToolTip": "Repositories\\EFCore\\CarRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAywDAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T08:36:15.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagedList.cs",
+              "DocumentMoniker": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Entities\\RequestFeatures\\PagedList.cs",
+              "RelativeDocumentMoniker": "Entities\\RequestFeatures\\PagedList.cs",
+              "ToolTip": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Entities\\RequestFeatures\\PagedList.cs",
+              "RelativeToolTip": "Entities\\RequestFeatures\\PagedList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-18T08:33:50.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FilesController.cs",
+              "DocumentMoniker": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Presentation\\Controllers\\FilesController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\FilesController.cs",
+              "ToolTip": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Presentation\\Controllers\\FilesController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\FilesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T13:06:52.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ServicesExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\CarWebApi\\Extensions\\ServicesExtensions.cs",
+              "RelativeDocumentMoniker": "CarWebApi\\Extensions\\ServicesExtensions.cs",
+              "ToolTip": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\CarWebApi\\Extensions\\ServicesExtensions.cs",
+              "RelativeToolTip": "CarWebApi\\Extensions\\ServicesExtensions.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwKsAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T12:50:06.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RepositoryManager.cs",
+              "DocumentMoniker": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Repositories\\EFCore\\RepositoryManager.cs",
+              "RelativeDocumentMoniker": "Repositories\\EFCore\\RepositoryManager.cs",
+              "ToolTip": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Repositories\\EFCore\\RepositoryManager.cs",
+              "RelativeToolTip": "Repositories\\EFCore\\RepositoryManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAACAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T11:57:03.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CarDto.cs",
+              "DocumentMoniker": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Entities\\DataTransferObjects\\CarDto.cs",
+              "RelativeDocumentMoniker": "Entities\\DataTransferObjects\\CarDto.cs",
+              "ToolTip": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Entities\\DataTransferObjects\\CarDto.cs",
+              "RelativeToolTip": "Entities\\DataTransferObjects\\CarDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T11:47:27.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CarDtoForInsertion.cs",
+              "DocumentMoniker": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Entities\\DataTransferObjects\\CarDtoForInsertion.cs",
+              "RelativeDocumentMoniker": "Entities\\DataTransferObjects\\CarDtoForInsertion.cs",
+              "ToolTip": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Entities\\DataTransferObjects\\CarDtoForInsertion.cs",
+              "RelativeToolTip": "Entities\\DataTransferObjects\\CarDtoForInsertion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T08:01:42.786Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CarManager.cs",
+              "DocumentMoniker": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Services\\CarManager.cs",
+              "RelativeDocumentMoniker": "Services\\CarManager.cs",
+              "ToolTip": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Services\\CarManager.cs",
+              "RelativeToolTip": "Services\\CarManager.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T08:03:18.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\CarWebApi\\Program.cs",
+              "RelativeDocumentMoniker": "CarWebApi\\Program.cs",
+              "ToolTip": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\CarWebApi\\Program.cs",
+              "RelativeToolTip": "CarWebApi\\Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T12:55:15.114Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Presentation\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "Presentation\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\Users\\sercf\\Desktop\\Projects\\CarWebApi\\CarWebApi\\Presentation\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "Presentation\\Controllers\\CarsController.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAjwEUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T13:37:50.641Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
